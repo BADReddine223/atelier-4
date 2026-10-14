@@ -28,4 +28,9 @@ class Rectangle extends Forme {
 void main() {
   var cercle = Cercle(5);
   var rectangle = Rectangle(4, 6);
+
+  cercle.afficherMessage();
+  print("Aire du cercle : ${cercle.calculerAire()}");
+  rectangle.afficherMessage();
+  print("Aire du rectangle : ${rectangle.calculerAire()}");
 }
