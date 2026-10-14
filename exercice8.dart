@@ -41,5 +41,10 @@ void main() {
   print("Pages : ${livre1.pages}");
   livre2.afficherInfos();
 
+  var roman1 = Roman("Da Vinci Code", "Dan Brown", "Policier");
+  var roman2 = Roman("Dune", "Frank Herbert", "Science-fiction");
+  roman1.afficherGenre();
+  roman2.afficherGenre();
+
   Livre.afficherTotal();
 }
