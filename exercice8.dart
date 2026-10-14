@@ -16,6 +16,10 @@ class Livre {
   void afficherInfos() {
     print("Titre: $titre, Auteur: $auteur");
   }
+
+  static void afficherTotal() {
+    print("Nombre total de livres : $totalLivres");
+  }
 }
 
 void main() {
@@ -26,4 +30,6 @@ void main() {
   livre1.afficherInfos();
   print("Pages : ${livre1.pages}");
   livre2.afficherInfos();
+
+  Livre.afficherTotal();
 }
