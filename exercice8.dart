@@ -22,6 +22,16 @@ class Livre {
   }
 }
 
+class Roman extends Livre {
+  String genre;
+  Roman(String titre, String auteur, this.genre) : super(titre, auteur);
+
+  void afficherGenre() {
+    afficherInfos();
+    print("Genre : $genre");
+  }
+}
+
 void main() {
   var livre1 = Livre("L'Étranger", "Albert Camus");
   var livre2 = Livre("Le Petit Prince", "Antoine de Saint-Exupéry");
