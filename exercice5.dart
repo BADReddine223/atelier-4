@@ -7,3 +7,11 @@ abstract class Forme {
     print("Calcul de l'aire...");
   }
 }
+
+class Cercle extends Forme {
+  final double rayon;
+  Cercle(this.rayon);
+
+  @override
+  double calculerAire() => 3.14159 * rayon * rayon;
+}
