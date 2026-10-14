@@ -34,4 +34,9 @@ void main() {
   var bd = BaseDeDonnees();
 
   List<Connectable> services = [api, bd];
+
+  for (var service in services) {
+    service.connecter("admin");
+    service.deconnecter();
+  }
 }
