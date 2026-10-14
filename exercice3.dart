@@ -15,3 +15,9 @@ class Compte {
     if (montant > 0) _solde += montant;
   }
 }
+
+void main() {
+  var monCompte = Compte("CA-2026-001");
+  monCompte.depot(150);
+  print("Solde : ${monCompte.solde}");
+}
