@@ -10,4 +10,8 @@ class Compte {
 
   // ex : "150.00 $"
   String get solde => "${_solde.toStringAsFixed(2)} \$";
+
+  void depot(double montant) {
+    if (montant > 0) _solde += montant;
+  }
 }
