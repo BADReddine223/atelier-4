@@ -11,3 +11,11 @@ class Livre {
     print("Titre: $titre, Auteur: $auteur");
   }
 }
+
+void main() {
+  var livre1 = Livre("L'Étranger", "Albert Camus");
+  var livre2 = Livre("Le Petit Prince", "Antoine de Saint-Exupéry");
+
+  livre1.afficherInfos();
+  livre2.afficherInfos();
+}
