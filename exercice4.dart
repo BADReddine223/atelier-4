@@ -37,4 +37,8 @@ void main() {
     Film("Inception", 148),
     Film("Interstellar", 169),
   ];
+
+  for (var media in catalogue) {
+    media.afficherType();
+  }
 }
