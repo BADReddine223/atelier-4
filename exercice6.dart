@@ -12,5 +12,7 @@ class ServeurAPI implements Connectable {
   }
 
   @override
-  void deconnecter() {}
+  void deconnecter() {
+    print("ServeurAPI : Déconnexion réussie.");
+  }
 }
