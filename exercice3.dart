@@ -7,4 +7,7 @@ class Compte {
   Compte(this.numeroCompte, [double soldeDepart = 0.0]) {
     _solde = soldeDepart;
   }
+
+  // ex : "150.00 $"
+  String get solde => "${_solde.toStringAsFixed(2)} \$";
 }
